@@ -8,7 +8,7 @@ number2 = st.number_input("Enter Second Number",placeholder="Ex: 10")
 
 option = st.selectbox(
     "Select the Operation",
-    ['Addition','Subtraction'],
+    ['Addition','Subtraction','Multiplication','Division'],
     index=None
 )
 
@@ -19,4 +19,10 @@ if res:
         st.write(f"Result for {option}: {result}")
     elif option == "Subtraction":
         result = number1 - number2
+        st.write(f"Result for {option}: {result}")
+    elif option == "Multiplication":
+        result = number1 * number2
+        st.write(f"Result for {option}: {result}")
+    elif option == "Division":
+        result = number1 / number2
         st.write(f"Result for {option}: {result}")
